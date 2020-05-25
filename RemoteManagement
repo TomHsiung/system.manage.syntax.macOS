@@ -1,0 +1,5 @@
+# Enter the following command to enable remote management (This command lets any administrator user using Remote Desktop log in to the client computer with full access privileges.)
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -restart -agent -privs -all
+
+# Enter the following command to disable remote management and deny previously available logins
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate
