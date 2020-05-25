@@ -1,0 +1,5 @@
+# Show power management parameters
+pmset -g
+
+# Sleep the computer immediately
+pmset sleepnow
