@@ -1,0 +1,2 @@
+# connect via SSH protocol based on a specific client private key
+ssh -i /path/to/private/key xxx@1.1.1.1
