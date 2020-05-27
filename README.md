@@ -7,8 +7,11 @@ A collection of commonly used and useful system management command for macOS
 3) `pmset` is the native command-line tool for power management of macOS.
 4) `ssh` is the command to connect via SSH protocol.
 
-# Supported encryption algorithm
+# Appendix
 
+```
+# SSH key pair encryption algorithm
+```
 |Algorithm|Description|
 | - | - |
 |rsa|an old algorithm based on the difficulty of factoring large numbers. A key size of at least 2048 bits is recommended for RSA; 4096 bits is better. RSA is getting old and significant advances are being made in factoring. Choosing a different algorithm may be advisable. It is quite possible the RSA algorithm will become practically breakable in the foreseeable future. All SSH clients support this algorithm.|
