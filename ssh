@@ -1,2 +1,8 @@
-# connect via SSH protocol based on a specific client private key
+# Connect via SSH protocol based on a specific client private key
 ssh -i /path/to/private/key xxx@1.1.1.1
+
+# Generate a key pair and save into files (a private key with the filename and a paired public key file will be generated)
+ssh-keygen -f /path/to/filename -t ecdsa -b 521
+
+# Copy the public key to remote host
+ssh-copy-id -i /path/to/filename user@host
