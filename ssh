@@ -6,3 +6,6 @@ ssh-keygen -f /path/to/filename -t ecdsa -b 521
 
 # Copy the public key to remote host
 ssh-copy-id -i /path/to/filename user@host
+
+# Change the passphrase of client private key
+ssh-keygen -p -f /path/to/private/key
