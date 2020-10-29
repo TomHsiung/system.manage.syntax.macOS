@@ -1,0 +1,3 @@
+＃ Load the specified configuration files or directories of configuration files.  Jobs that are not on-demand will be started as soon as possible. All specified jobs will be loaded before any of them are allowed to start. Note that per-user configuration files (LaunchAgents) must be owned by root (if they are located in /Library/LaunchAgents) or the user loading them (if they are located in $HOME/Library/LaunchAgents).  All system-wide daemons (LaunchDaemons) must be owned by root. Configuration files must disallow group and world writes. These restrictions are in place for security reasons, as allowing writability to a launchd configuration file allows one to specify which executable will be launched.
+
+launchctl load -w //Library/LaunchDaemons/xxx.plist
