@@ -1,0 +1,24 @@
+diskutil secureErase 4 /dev/diskX
+
+Erase, using a secure method, either a whole-disk (including
+                any and all partitions), or, only the free space (not in use
+                for files) on a currently-mounted volume.  Erasing a whole-
+                disk will leave it useless until it is partitioned again.
+                Erasing freespace on a volume will leave it exactly as it was
+                from an end-user perspective, with the exception that it will
+                not be possible to recover deleted files or data using utility
+                software.  If you need to erase all contents of a partition
+                but not its hosting whole-disk, use the zeroDisk or randomDisk
+                verbs.  Ownership of the affected disk is required.
+
+                Level should be one of the following:
+
+                      •   0 - Single-pass zero-fill erase.
+
+                      •   1 - Single-pass random-fill erase.
+
+                      •   2 - US DoD 7-pass secure erase.
+
+                      •   3 - Gutmann algorithm 35-pass secure erase.
+
+                      •   4 - US DoE algorithm 3-pass secure erase.
