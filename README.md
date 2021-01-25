@@ -7,6 +7,7 @@ A collection of commonly used and useful system management command for macOS
 3) `pmset` is the native command-line tool for power management of macOS.
 4) `ssh` is the command to connect via SSH protocol.
 5) `zsh`is collection of zsh-specific syntax.
+6) `diskutil` is the tool for the management of disks on macOS.
 
 # Appendix
 
