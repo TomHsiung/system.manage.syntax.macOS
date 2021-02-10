@@ -1,0 +1,8 @@
+# change default saved file format of screenshots. Do not use with sudo
+# png is the initially default format
+
+defaults write com.apple.screencapture type jpg;killall SystemUIServer
+defaults write com.apple.screencapture type tiff;killall SystemUIServer
+defaults write com.apple.screencapture type pdf;killall SystemUIServer
+defaults write com.apple.screencapture type gif;killall SystemUIServer
+defaults write com.apple.screencapture type png;killall SystemUIServer
