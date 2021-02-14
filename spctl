@@ -1,0 +1,2 @@
+# Allow installation from third-party developers
+sudo spctl --master-disable
