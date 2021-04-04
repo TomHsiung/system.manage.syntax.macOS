@@ -1,0 +1,8 @@
+# List all services of a specific domain
+launchctl print domain
+
+# List a service of a domain
+launchctl print domain-target/service-target
+
+# Examples
+launchctl print system/homebrew.mxcl.vnstat
