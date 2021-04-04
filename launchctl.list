@@ -1,0 +1,5 @@
+# List all service-targets for current user
+launchctl list
+
+# List all service-targets for root
+sudo launchctl list
