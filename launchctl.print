@@ -6,3 +6,4 @@ launchctl print domain-target/service-target
 
 # Examples
 launchctl print system/homebrew.mxcl.vnstat
+launchctl print system/com.apple.Safari.History
