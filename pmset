@@ -7,5 +7,5 @@ pmset sleepnow
 # Scheduled only for once time
 pmset schedule [sleep, wake, poweron, shutdown, wakeorpoweron] "MM/dd/yy HH:mm:ss"
 
-# Scheduled repeatedly
+# Scheduled repeatedly, MTWRFSU means weekday
 pmset repeat [sleep, wake, poweron, shutdown, wakeorpoweron] [MTWRFSU, weekdays, weekends, everyday] HH:mm:ss
