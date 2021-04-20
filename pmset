@@ -9,3 +9,7 @@ pmset schedule [sleep, wake, poweron, shutdown, wakeorpoweron] "MM/dd/yy HH:mm:s
 
 # Scheduled repeatedly, MTWRFSU means weekday
 pmset repeat [sleep, wake, poweron, shutdown, wakeorpoweron] [MTWRFSU, weekdays, weekends, everyday] HH:mm:ss
+
+# Cancel a pmset schedule
+pmset schedule [cancel] {sleep | wake | poweron | shutdown | wakeorpoweron} "MM/dd/yy HH:mm:ss" [owner]
+pmset repeat cancel
