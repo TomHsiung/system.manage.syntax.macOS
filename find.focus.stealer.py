@@ -1,3 +1,5 @@
+# This script is used for the diagnosis of active window focus lost issue in Macs 
+
 #!/usr/bin/python
 
 from AppKit import NSWorkspace
