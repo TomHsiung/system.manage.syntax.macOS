@@ -1,0 +1,80 @@
+softwareupdate
+
+Check for new and updated versions of your software based on information about your computer and current software.
+
+Syntax
+     softwareupdate command [args ...]
+
+Options
+
+   -l
+   --list
+       List all available updates.
+
+   -d
+   --download
+
+   -i
+   --install
+       Each update specified by args is downloaded, unarchived, and
+       installed.  This command requires root.
+
+   args can be one of the following:
+
+      item ...     One or more update names.
+      -a | --all   All available active updates.
+      -r | --req   All required active updates.
+
+   --fetch-full-installer [--full-installer-version version.number]
+       Download the latest 'Install macOS' application to the /Applications folder.
+       This option is available in Catalina (10.15) and greater
+
+   --ignore ...
+       Manage the per-user list of ignored updates.
+
+   --reset-ignored
+       Clear the list of all ignored updates.
+
+   --schedule on
+   --schedule off
+       Enable or disable automatic checking.
+
+   -h
+   --help
+       Print command usage.
+Examples
+
+Install all available Software Updates 
+$ sudo softwareupdate -ia
+
+Download a specific version of macOS:
+
+$ softwareupdate --fetch-full-installer --full-installer-version 10.15.4
+
+The following examples are shown as given to the shell:
+
+$ softwareupdate --list
+
+     ! iPhoto-2.0
+         iPhoto, 2.0, 34100K [recommended]
+     ! iSync-1.0
+         iSync, 1.0, 4840K [recommended]
+     ! StuffItExpander7-7.0
+         StuffIt Expander Security Update, 7.0, 4420K [recommended]
+
+$ softwareupdate --install iCal-1.0.2
+
+     Software Update Tool
+     Copyright 2002-2003 Apple Computer, Inc.
+
+     Installing iCal:
+     0...10...20...30...40...50...60...70...80...90...100 Done.
+
+$ softwareupdate --ignore iCal iPhoto
+
+$ softwareupdate --schedule
+
+     Automatic check is on
+File: /usr/sbin/softwareupdate
+
+Variable: COMMAND_LINE_INSTALL Set when downloading or installing using the softwareupdate command. Scripts can check for the existence of this variable to determine if they are executing in a command line environment (i.e. there may be no WindowServer available).
