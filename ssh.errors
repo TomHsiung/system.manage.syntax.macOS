@@ -1,0 +1,5 @@
+# Eerror 1
+WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED
+
+# Fix
+ssh-keygen -R host
