@@ -1,6 +1,6 @@
 diskutil secureErase 4 /dev/diskX
 
-Erase, using a secure method, either a whole-disk (including
+/* Erase, using a secure method, either a whole-disk (including
                 any and all partitions), or, only the free space (not in use
                 for files) on a currently-mounted volume.  Erasing a whole-
                 disk will leave it useless until it is partitioned again.
@@ -22,3 +22,11 @@ Erase, using a secure method, either a whole-disk (including
                       •   3 - Gutmann algorithm 35-pass secure erase.
 
                       •   4 - US DoE algorithm 3-pass secure erase.
+*/
+
+# List all disks
+diskutil list
+
+# Erase a disk
+# diskutil eraseDisk FILE_SYSTEM DISK_NAME DISK_IDENTIFIER
+diskutil eraseDisk Apple_HFS USB /dev/disk11
