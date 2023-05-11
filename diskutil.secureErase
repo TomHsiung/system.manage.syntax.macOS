@@ -27,6 +27,9 @@ diskutil secureErase 4 /dev/diskX
 # List all disks
 diskutil list
 
+# View a list of supported file systems
+diskutil listFilesystems
+
 # Erase a disk
 # diskutil eraseDisk FILE_SYSTEM DISK_NAME DISK_IDENTIFIER
 diskutil eraseDisk Apple_HFS USB /dev/disk11
