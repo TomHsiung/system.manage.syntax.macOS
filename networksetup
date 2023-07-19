@@ -1,2 +1,5 @@
 # setup Mac DNS server(s) via terminal
 networksetup -setdnsservers Ethernet 10.5.96.4 10.0.0.1
+
+# get the DNS server information via terminal
+networksetup -getdnsservers Ethernet
