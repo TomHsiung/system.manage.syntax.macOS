@@ -1,0 +1,2 @@
+# List several information about DNS (i.e., resolvers)
+scutil --dns
