@@ -1,0 +1,5 @@
+# Test for connection
+ssh -T git@github.com
+
+# Successful feedback
+Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
