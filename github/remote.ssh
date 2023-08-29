@@ -3,3 +3,6 @@ ssh -T git@github.com
 
 # Successful feedback
 Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
+
+# Clone a repository
+git clone git@github.com:Username/system.manage.syntax.macOS.git
