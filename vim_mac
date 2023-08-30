@@ -1,0 +1,9 @@
+# Here are some commands of the famous vim editor on Mac
+# Save without exiting
+:w
+
+# Save to a new file without exiting
+:w new_file_name
+
+# Save and exit vim editor
+:wq
