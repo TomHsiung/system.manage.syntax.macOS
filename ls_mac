@@ -1,0 +1,2 @@
+# List files and folders in human-read friendly format by last modified date
+ls -liath
