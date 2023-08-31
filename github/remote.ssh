@@ -6,3 +6,9 @@ Hi USERNAME! You've successfully authenticated, but GitHub does not provide shel
 
 # Clone a repository
 git clone git@github.com:Username/system.manage.syntax.macOS.git
+
+# Upload updates to a Github repository
+git push
+
+# Download updates from Github repository
+git pull
