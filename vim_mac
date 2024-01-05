@@ -7,3 +7,6 @@
 
 # Save and exit vim editor
 :wq
+
+# Delete all lines
+:1,$d
