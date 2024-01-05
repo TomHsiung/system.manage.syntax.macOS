@@ -1,1 +1,4 @@
 tshark -i eth0 -w ~/captured.pcap -c 1000 -F pcap -f "host 192.168.0.1"
+tshark -i eth0 -w ~/captured.pcap -c 1000 -F pcap -f "host 192.168.0.1"
+
+tshark -i eth0 -w ~/captured.pcap -a duration:120 -F pcap -f "host 192.168.0.1"
