@@ -10,3 +10,6 @@
 
 # Delete all lines
 :1,$d
+
+# Delete all lines between line #3 and the last 2 lines.
+:4,$-2d
