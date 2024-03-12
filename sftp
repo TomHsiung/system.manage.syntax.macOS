@@ -1,0 +1,5 @@
+# Show local working directory
+lpwd
+
+# Show remote working directory
+pwd
