@@ -5,3 +5,4 @@ ssh-keygen -t ed25519 -C "name@domain.com"
 ssh-add --apple-use-keychain ~/.ssh/privkey.pem
 
 # Copy public key and paste it to Github
+# Pay attention: to use the native ssh-agent of macOS, third-party ssh-agents need to be turned off, e.g., 1Password.
