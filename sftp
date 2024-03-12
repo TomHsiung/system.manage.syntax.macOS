@@ -1,5 +1,40 @@
+# List remote files
+ls
+
+# List local files
+lls
+
 # Show local working directory
 lpwd
 
 # Show remote working directory
 pwd
+
+# Switch remote directory
+cd folder
+
+# Switch local directory
+lcd folder
+
+# Create remote directory
+mkdir folder
+
+# Create local directory
+lmkdir folder
+
+# Download files
+get file.zip
+mget *.zip
+
+# Resume downloading
+reget file.zip
+
+# Upload file
+put file.zip
+mput *.zip
+
+# Resume uploading
+reput file.zip
+
+# Exit sFTP shell
+!
